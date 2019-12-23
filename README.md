@@ -1,22 +1,22 @@
 # Docker YOURLS 
 A Dockerfile installing [YOURLS](https://github.com/YOURLS/YOURLS) running on Apache 2.4 from source. Built on Alpine Linux.
 
-[![Docker Stars](https://img.shields.io/docker/stars/alfg/YOURLS.svg)](https://hub.docker.com/r/alfg/YOURLS/)
-[![Docker Pulls](https://img.shields.io/docker/pulls/alfg/YOURLS.svg)](https://hub.docker.com/r/alfg/YOURLS/)
-[![Docker Automated build](https://img.shields.io/docker/automated/alfg/YOURLS.svg)](https://hub.docker.com/r/alfg/YOURLS/builds/)
+[![Docker Stars](https://img.shields.io/docker/stars/alfg/yourls.svg)](https://hub.docker.com/r/alfg/yourls/)
+[![Docker Pulls](https://img.shields.io/docker/pulls/alfg/yourls.svg)](https://hub.docker.com/r/alfg/yourls/)
+[![Docker Automated build](https://img.shields.io/docker/automated/alfg/yourls.svg)](https://hub.docker.com/r/alfg/yourls/builds/)
 [![Build Status](https://travis-ci.org/alfg/docker-YOURLS.svg?branch=master)](https://travis-ci.org/alfg/docker-YOURLS)
 
 ## Usage
 
 * Pull docker image and run:
 ```
-docker pull alfg/YOURLS
-docker run -d -p 8080:80 --rm alfg/YOURLS
+docker pull alfg/yourls
+docker run -d -p 8080:80 --rm alfg/yourls
 ```
 * or build and run container from source:
 ```
 docker build -t YOURLS
-docker run -d -p 8080:80 --rm YOURLS
+docker run -d -p 8080:80 --rm yourls
 ```
 
 * or build using `docker-compose`:
