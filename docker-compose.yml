@@ -1,0 +1,24 @@
+version: '3.1'
+
+services:
+  yourls:
+    build: .
+    ports: 
+      - 8080:80
+    links:
+      - db
+
+  db:
+    image: mysql
+    command: --default-authentication-plugin=mysql_native_password
+    restart: always
+    environment:
+      MYSQL_ROOT_PASSWORD: docker
+      MYSQL_DATABASE: yourls
+      MYSQL_USER: docker
+      MYSQL_PASSWORD: docker
+    ports: 
+      - 3306:3306
+
+    volumes:
+      - /var/lib/mysql
